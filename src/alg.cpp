@@ -18,11 +18,11 @@ int cbinsearch(int* arr, int size, int value) {
     sorted(arr, size);
     int c = size / 2;
     int k = -size;
-    while (k!=size) {
+    while (k != size) {
         k++;
         if (arr[c] > value) {
             c /= 2;
-        } else if(arr[c] < value) {
+        } else if (arr[c] < value) {
             c += c / 2;
         } else if (arr[c] == value) {
             int a = 1;
